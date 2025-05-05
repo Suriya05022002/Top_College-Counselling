@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Network - Top College Counselling</title>
+    <!-- Added Google Fonts for Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="animated-bg"></div>
+        <div class="header-content">
+            
+            <h1>Gowthamraj Network</h1>
+            <p>Discover the most preferred colleges and universities to help you make the right choice for your future</p>
+            <div class="header-cta">
+                <a href="#colleges-container" class="cta-button">Explore Colleges</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search colleges by name, location, or code...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="filter-container">
+                <label for="filter-location">Filter by:</label>
+                <select id="filter-location">
+                    <option value="all">All Locations</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Kancheepuram">Kancheepuram</option>
+                </select>
+            </div>
+            <div class="view-toggle">
+                <button id="grid-view-btn" class="active">Card View</button>
+                <button id="table-view-btn">Table View</button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading colleges...</p>
+        </div>
+
+        <div class="colleges-grid" id="colleges-container">
+            <!-- College cards will be inserted here by JavaScript -->
+        </div>
+
+        <div class="table-responsive">
+            <table class="colleges-table" id="colleges-table">
+                <thead>
+                    <tr>
+                        <th data-sort="code">Code</th>
+                        <th data-sort="name">College Name</th>
+                        <th data-sort="location">Location</th>
+                        <th data-sort="ranking">Ranking</th>
+                        <th>Website</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Table rows will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container">
+        <!-- Toast notifications will be inserted here by JavaScript -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About GR Network</h3>
+                <p>Gowthamraj Network helps students find the best colleges and universities to pursue their dreams and build successful careers.</p>
+                <div class="social-links">
+                    <!-- <a href="#" class="social-link">F</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">Li</a>
+                    <a href="#" class="social-link">ig</a> -->
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Colleges</a></li>
+                    <li><a href="#">Counselling</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#">College Rankings</a></li>
+                    <li><a href="#">Admission Guidelines</a></li>
+                    <li><a href="#">Scholarship Programs</a></li>
+                    <li><a href="#">Career Guidance</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>Email: info@gowthamrajnetwork.com</li>
+                    <li>Phone: +91 98765 43210</li>
+                    <li>Address: 123 Education Street, Chennai, Tamil Nadu, India</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 <span class="gr-footer-brand">Gowthamraj Network</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">
+           </script>
+</body>
+</html>
