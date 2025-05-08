@@ -376,8 +376,12 @@ window.addEventListener('load', function() {
     
     // Welcome toast
     setTimeout(() => {
-        showToast('Welcome to Gowthamraj Network! Explore the best colleges in Tamil Nadu.', 'success');
+        showToast(
+            '<span class="gowthamraj-text">Gowthamraj Network!</span>  Explore the best colleges in Tamil Nadu.',
+            'success'
+        );
     }, 1000);
+    
 });
 
 // Add smooth scrolling for anchor links
